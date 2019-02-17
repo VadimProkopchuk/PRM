@@ -45,6 +45,8 @@ namespace PRM.Models
 
         public double GetDistanceToCenter(Point point) => Core.GetDistance(point);
 
+        public double GetDistanceToCenter(AreaPoints areaPoints) => Core.GetDistance(areaPoints.Core);
+
         public void Add(Point point)
         {
             lock (Lock)

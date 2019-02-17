@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs", "Labs", "{3752BD4A-84E5-4AF5-928C-2D5F0EC4CC0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR2", "LR2\LR2.csproj", "{0F4F1343-4E49-4FDD-98E3-01293324B5B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +37,17 @@ Global
 		{6F2A68C1-7A98-41EA-B686-129C39F852A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F2A68C1-7A98-41EA-B686-129C39F852A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F2A68C1-7A98-41EA-B686-129C39F852A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4F1343-4E49-4FDD-98E3-01293324B5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4F1343-4E49-4FDD-98E3-01293324B5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4F1343-4E49-4FDD-98E3-01293324B5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4F1343-4E49-4FDD-98E3-01293324B5B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5CAD66C4-F6F0-4B79-AEA5-CF1AC401F3A6} = {3752BD4A-84E5-4AF5-928C-2D5F0EC4CC0F}
+		{0F4F1343-4E49-4FDD-98E3-01293324B5B0} = {3752BD4A-84E5-4AF5-928C-2D5F0EC4CC0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48A5A524-908C-40FC-9095-CDEC1017C829}

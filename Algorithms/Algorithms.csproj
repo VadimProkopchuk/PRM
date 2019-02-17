@@ -42,7 +42,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\BasedAreaPointsAlgorithm.cs" />
     <Compile Include="KMeansAlgorithm.cs" />
+    <Compile Include="MaximinAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
