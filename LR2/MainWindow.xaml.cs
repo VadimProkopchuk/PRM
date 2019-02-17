@@ -26,15 +26,8 @@ namespace PRM.LR2
         {
             var maximinAlgorithm = new MaximinAlgorithm(countOfPoints.GenerateRandomPoints(maxX, maxY));
             var result = await maximinAlgorithm.GetResultAsync();
-            var drawingGroup = new DrawingGroup();
-            var colorStep = (int)Math.Pow(2, 24) / result.Count;
 
-            for (var i = 0; i < result.Count; i++)
-            {
-                drawingGroup.DrawClass(colorStep * i, result[i]);
-            }
-
-            return new DrawingImage(drawingGroup);
+            return result.GetDrawingImage();
         }
     }
 }

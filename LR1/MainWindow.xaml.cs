@@ -27,15 +27,8 @@ namespace PRM.LR1
         {
             var kMeansAlgorithm = new KMeansAlgorithm(countOfPoints.GenerateRandomPoints(maxX, maxY), countOfClasses);
             var result = await kMeansAlgorithm.GetResultAsync();
-            var drawingGroup = new DrawingGroup();
-            var colorStep = (int) Math.Pow(2, 24) / countOfClasses;
 
-            for (var i = 0; i < result.Count; i++)
-            {
-                drawingGroup.DrawClass(colorStep * i, result[i]);
-            }
-
-            return new DrawingImage(drawingGroup);
+            return result.GetDrawingImage();
         }
     }
 }

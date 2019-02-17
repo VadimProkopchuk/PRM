@@ -1,4 +1,7 @@
-﻿using System.Windows.Media;
+﻿using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Windows.Media;
 using PRM.Models;
 
 namespace PRM.Utils
@@ -24,6 +27,19 @@ namespace PRM.Utils
             };
 
             drawingGroup.Children.Add(geometryDrawing);
+        }
+
+        public static DrawingImage GetDrawingImage(this List<AreaPoints> areaPointsList)
+        {
+            var drawingGroup = new DrawingGroup();
+            var colorStep = (int)Math.Pow(2, 24) / areaPointsList.Count;
+
+            for (var i = 0; i < areaPointsList.Count; i++)
+            {
+                drawingGroup.DrawClass(colorStep * i, areaPointsList[i]);
+            }
+
+            return new DrawingImage(drawingGroup);
         }
     }
 }
