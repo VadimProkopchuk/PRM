@@ -1,17 +1,17 @@
-﻿using PRM.Models.KMeans;
-using System.Windows.Media;
+﻿using System.Windows.Media;
+using PRM.Models;
 
 namespace PRM.Utils
 {
     public static class DrawUtils
     {
-        public static void DrawClass(this DrawingGroup drawingGroup, int colorNumber, KMeans kClass)
+        public static void DrawClass(this DrawingGroup drawingGroup, int colorNumber, AreaPoints areaPoints)
         {
             var ellipses = new GeometryGroup();
 
-            foreach (var point in kClass.GetPoints())
+            foreach (var point in areaPoints.GetPoints())
             {
-                var pointSize = kClass.CompareCenter(point) ? 4 : 1;
+                var pointSize = areaPoints.CompareCore(point) ? 4 : 1;
 
                 ellipses.Children.Add(new EllipseGeometry(point, pointSize, pointSize));
             }

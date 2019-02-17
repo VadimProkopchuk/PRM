@@ -42,8 +42,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaPoints.cs" />
     <Compile Include="Calculators\DistanceCalculator.cs" />
-    <Compile Include="KMeans\KMeans.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
