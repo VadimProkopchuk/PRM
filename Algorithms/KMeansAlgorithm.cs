@@ -18,6 +18,11 @@ namespace PRM.Algorithms
             AreaPointsList = GenerateAreaPointsList(countOfClasses);
         }
 
+        public KMeansAlgorithm(List<Point> points, List<AreaPoints> areaPoints) : base(points)
+        {
+            AreaPointsList = areaPoints;
+        }
+
         public async Task<List<AreaPoints>> GetResultAsync()
         {
             return await Task.Run(() =>

@@ -12,6 +12,7 @@ namespace PRM.LR1
         public MainWindow()
         {
             InitializeComponent();
+            Button.Content = "Распределить";
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
@@ -19,7 +20,11 @@ namespace PRM.LR1
             if (int.TryParse(CountOfPoints.Text, out var countOfPoints) &&
                 int.TryParse(CountOfClasses.Text, out var countOfClasses))
             {
+                Button.Content = "Загрузка";
+                Button.IsEnabled = false;
                 PointsImage.Source = await GetDrawingImage(countOfPoints, countOfClasses, (int) PointsImage.Width, (int) PointsImage.Height - 40);
+                Button.Content = "Распределить";
+                Button.IsEnabled = true;
             }
         }
 
