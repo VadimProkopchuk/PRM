@@ -45,6 +45,7 @@
     <Compile Include="AreaPoints.cs" />
     <Compile Include="Calculators\DistanceCalculator.cs" />
     <Compile Include="PointDistance.cs" />
+    <Compile Include="ProbablisticApproachResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

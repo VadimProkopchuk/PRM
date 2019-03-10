@@ -45,6 +45,7 @@
     <Compile Include="Core\BasedAreaPointsAlgorithm.cs" />
     <Compile Include="KMeansAlgorithm.cs" />
     <Compile Include="MaximinAlgorithm.cs" />
+    <Compile Include="ProbablisticApproachAlgorithm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
