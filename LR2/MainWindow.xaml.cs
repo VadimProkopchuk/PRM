@@ -1,4 +1,10 @@
-﻿using PRM.Algorithms;
+﻿// ======================================
+// Copyright © 2019 Vadim Prokopchuk. All rights reserved.
+// Contacts: mailvadimprokopchuk@gmail.com
+// License:  http://opensource.org/licenses/MIT
+// ======================================
+
+using PRM.Algorithms;
 using PRM.Utils;
 using System.Collections.Generic;
 using System.Linq;

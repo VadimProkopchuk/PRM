@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿// ======================================
+// Copyright © 2019 Vadim Prokopchuk. All rights reserved.
+// Contacts: mailvadimprokopchuk@gmail.com
+// License:  http://opensource.org/licenses/MIT
+// ======================================
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using PRM.Models.Calculators;

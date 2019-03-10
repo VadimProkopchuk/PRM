@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ======================================
+// Copyright © 2019 Vadim Prokopchuk. All rights reserved.
+// Contacts: mailvadimprokopchuk@gmail.com
+// License:  http://opensource.org/licenses/MIT
+// ======================================
+
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using PRM.Models;

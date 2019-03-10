@@ -5,6 +5,7 @@
     "name": "Vadim Prokopchuk",
     "email": "mailvadimprokopchuk@gmail.com"
   },
+  "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
