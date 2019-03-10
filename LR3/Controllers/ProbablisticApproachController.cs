@@ -4,7 +4,7 @@ using System.Web.Http.Description;
 using PRM.Algorithms;
 using PRM.Models;
 
-namespace Server.Controllers
+namespace LR3.Controllers
 {
     [Route("api/ProbablisticApproach")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]

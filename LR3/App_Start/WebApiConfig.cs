@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace Server
+namespace LR3
 {
     public static class WebApiConfig
     {

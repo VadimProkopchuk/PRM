@@ -36,29 +36,29 @@
 </template>
 
 <script>
-import axios from "axios";
-import LineChart from './LineChart.js'
+  import axios from "axios";
+  import LineChart from './LineChart.js'
 
-export default {
+  export default {
   components: {
-      LineChart
+  LineChart
   },
   name: "ProbablisticApproach",
   data(){
-    return {
-        chartData: null,
-        pc1: 0.35,
-        countOfPoints: 10000,
-        countOfGraphPoints: 1000,
-        falseProbability: null,
-        skipProbability: null,
-        eps: 0.00001
-    }
+  return {
+  chartData: null,
+  pc1: 0.35,
+  countOfPoints: 10000,
+  countOfGraphPoints: 1000,
+  falseProbability: null,
+  skipProbability: null,
+  eps: 0.00001
+  }
   },
   methods:{
-    getData(){
-        let baseMethodUrl = 'http://prm.local/api/ProbablisticApproach';
-        let methodUrl = `${baseMethodUrl}?pc1=${this.pc1}&countOfPoints=${this.countOfPoints}&countOfGraphPoints=${this.countOfGraphPoints}&eps=${this.eps}`;
+  getData(){
+  let baseMethodUrl = 'http://localhost:8190/api/ProbablisticApproach';
+  let methodUrl = `${baseMethodUrl}?pc1=${this.pc1}&countOfPoints=${this.countOfPoints}&countOfGraphPoints=${this.countOfGraphPoints}&eps=${this.eps}`;
 
         axios.get(methodUrl)
         .then(response => {
