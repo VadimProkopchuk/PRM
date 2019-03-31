@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,8 @@
     <Compile Include="PersiptronFunction.cs" />
     <Compile Include="PersiptronResult.cs" />
     <Compile Include="PointDistance.cs" />
+    <Compile Include="PotentialsFunction.cs" />
+    <Compile Include="PotentialsResult.cs" />
     <Compile Include="ProbablisticApproachResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vector.cs" />
